@@ -1,9 +1,12 @@
 import CustomHeader from "./CustomHeader";
-import Teacher from "../assets/teacher.svg"
+import Teacher from "../assets/teacher.svg";
+import Lesson from "../assets/lesson.svg";
+import Mentor from "../assets/mentor.svg";
+import Environment from "../assets/environment.svg"
 
 const AboutSection = () => {
   return (
-    <div className="py-6 bg-lightGray">
+    <div className="py-6 md:py-10 bg-lightGray">
         <section className="cont grid lg:grid-cols-2 gap-8 md:gap-4">
             <section className="flex justify-end relative">
                 <div className="max-w-[60%] aspect-[4/5] overflow-hidden border-white border-8 shadow-md rounded-xl">
@@ -25,26 +28,26 @@ const AboutSection = () => {
 
                 <section className="grid md:grid-cols-2 gap-4 my-4">
                     <div className="points">
-                        <div>
+                        <div className="bg-purple-200">
                             <img src={Teacher} alt="tutor" className="w-8" />
                         </div>
                         <p>Expert Tutors</p>
                     </div>
                     <div className="points">
-                        <div>
-                            <img src={Teacher} alt="tutor" className="w-8" />
+                        <div className="bg-white">
+                            <img src={Lesson} alt="tutor" className="w-8" />
                         </div>
                         <p>Comprehensive Lessons</p>
                     </div>
                     <div className="points">
-                        <div>
-                            <img src={Teacher} alt="tutor" className="w-8" />
+                        <div className="bg-green-200">
+                            <img src={Environment} alt="tutor" className="w-8" />
                         </div>
                         <p>Conducive Learning Environment</p>
                     </div>
                     <div className="points">
-                        <div>
-                            <img src={Teacher} alt="tutor" className="w-8" />
+                        <div className="bg-yellow-200">
+                            <img src={Mentor} alt="tutor" className="w-8" />
                         </div>
                         <p>Mentorship</p>
                     </div>

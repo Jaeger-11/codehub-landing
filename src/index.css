@@ -34,7 +34,7 @@ body{
 }
 
 .points div{
-  @apply bg-white w-max rounded-full p-2 leading-none
+  @apply w-max rounded-full p-2 leading-none
 }
 
 .btn{

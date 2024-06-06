@@ -21,6 +21,10 @@ const data = [
         name: "Data Analytics",
         image: ""
     },
+    {
+        name: "Product Management",
+        image: ""
+    },
 ]
 
 const LearningTracks = () => {

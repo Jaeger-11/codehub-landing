@@ -29,7 +29,7 @@ const data = [
 
 const LearningTracks = () => {
   return (
-    <div className=" py-6 md:py-10">
+    <div className=" py-6 md:py-10 border-b">
         <main className="cont grid lg:grid-cols-3 gap-8 md:gap-4">
             <article className="flex flex-col gap-3 lg:col-span-1 text-darkBlue sm:p-4">
                 <CustomHeader text={'Our Learning tracks'}/>
@@ -37,7 +37,7 @@ const LearningTracks = () => {
                     our comprehensive <span className="text-customBlue">courses</span> 
                 </h2>
                 <p className="text-base ">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, reiciendis voluptas voluptatibus corrupti excepturi sequi incidunt, id facilis voluptate!. Rem!
+                    Enroll at codehub for a rewarding learning journey and enhance your skillset in the tech space.
                 </p>
                 <button className="btn">Register now</button>
             </article>

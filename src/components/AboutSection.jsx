@@ -6,7 +6,7 @@ import Environment from "../assets/environment.svg"
 
 const AboutSection = () => {
   return (
-    <div className="py-6 md:py-10 bg-lightGray">
+    <div className="py-6 md:py-10 bg-lightGray border-b">
         <section className="cont grid lg:grid-cols-2 gap-8 md:gap-4">
             <section className="flex justify-end relative">
                 <div className="max-w-[60%] aspect-[4/5] overflow-hidden border-white border-8 shadow-md rounded-xl">
@@ -23,7 +23,7 @@ const AboutSection = () => {
                     Learn from top skilled <span className="text-customBlue">instructors</span> 
                 </h2>
                 <p className="text-base">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, reiciendis voluptas voluptatibus corrupti excepturi sequi incidunt, iure enim possimus velit quod commodi, id facilis voluptate!. Rem!
+                    Treat yourself to an in-depth grasp of the tech universe, through programs led by our seasoned team of experts. Our goal is to transform you into a proficient software engineer, adept at tackling intricate challenges and driving innovative solutions.
                 </p>
 
                 <section className="grid md:grid-cols-2 gap-4 my-4">

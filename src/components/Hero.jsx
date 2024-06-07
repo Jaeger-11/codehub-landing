@@ -3,12 +3,16 @@ import periscope from "../assets/periscope.png";
 import adebimpe from "../assets/P.A.Adebimpe-Co.png";
 import aggregate from "../assets/aggregate.png";
 import CustomHeader from "./CustomHeader";
+import greenarrow from "../assets/arrow-green.png";
+import bluearrow from "../assets/arrow-blue.png";
+import world from "../assets/world.png";
+import redmarks from "../assets/redmarks.png";
 
 const Hero = () => {
   return (
     <main className=" border-b bg-lightGray">
-        <section className="cont grid lg:grid-cols-2 lg:py-10 gap-4 lg:items-center">
-            <article className="flex flex-col gap-4 text-darkBlue my-6 lg:my-0">
+        <section data-aos="fade-down" className="cont grid lg:grid-cols-2 lg:py-10 gap-4 lg:items-center">
+            <article data-aos="zoom-in" className="flex flex-col gap-4 text-darkBlue my-6 lg:my-0">
                 <CustomHeader text={'100% Satisfaction Guarantee'} />
                 <h2 className="capitalize text-3xl font-bold md:text-4xl xlg:text-5xl lh font-pt">
                     {/* learn <span className="text-customBlue">skills</span> from our top instructors */}
@@ -27,7 +31,11 @@ const Hero = () => {
                 </section>
             </article>
 
-            <section>
+            <section data-aos="fade-up relative">
+                <img src={bluearrow} alt="" className="absolute bottom-4 right-6 w-12 md:w-20 rotate-180" />
+                {/* <img src={greenarrow} alt="" className="absolute top-4 left-6 w-12 md:w-20" /> */}
+                <img src={world} alt="" className="absolute bottom-4 left-0 w-12 md:w-20" />
+                <img src={redmarks} alt="" className="absolute -top-4 -right-2 w-12 md:w-20" />
                 <div>
                     <img src={hero1} alt="hero" />
                     {/* <img src="https://ifingerstudio.com/eduvalt/wp-content/uploads/2023/07/banner_img.png" alt="" /> */}
@@ -38,9 +46,9 @@ const Hero = () => {
         <section className="bg-white py-4">
             <div className="cont flex justify-center mb-4"><CustomHeader text={'powered by'}/></div>
             <div className="grid sm:grid-cols-3 gap-6 justify-center text-center mb-4">
-                <img src={periscope} alt="periscope" className="h-16 mx-auto" />
-                <img src={aggregate} alt="aggregate" className="h-16 mx-auto" />
-                <img src={adebimpe} alt="adebimpe" className="h-16 mx-auto" />
+                <img src={periscope} data-aos="fade-up" alt="periscope" className="h-16 mx-auto" />
+                <img src={aggregate} data-aos="fade-up" alt="aggregate" className="h-16 mx-auto" />
+                <img src={adebimpe} data-aos="fade-up" alt="adebimpe" className="h-16 mx-auto" />
             </div>
         </section>
     </main>

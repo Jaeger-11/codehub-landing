@@ -30,16 +30,16 @@ const requirements = [
 const Academy = () => {
   return (
     <div className="py-10 border-b">
-        <main className="cont text-darkBlue">
-            <h2 className="text-center uppercase text-2xl font-bold md:text-3xl xlg:text-4xl lh font-pt">codehub <span className="text-customBlue">academy 2024</span></h2>
+        <main data-aos="fade-up" className="cont  text-darkBlue">
+            <h2 className="text-center uppercase text-2xl font-bold md:text-3xl xlg:text-4xl lh font-pt">codehub academy<span className="text-customBlue"> 2024</span></h2>
 
-            <section className="grid md:grid-cols-2 gap-4 mt-4">
+            <section data-aos="fade-up" className="grid md:grid-cols-2 gap-4 mt-4">
                 <section className="p-4 border">
                     <h2 className="p-3 mb-4 border font-semibold text-customBlue text-lg">WHAT TO EXPECT</h2>
                     <div className="flex flex-col gap-4 border py-4">
                         {expectations.map((item) => {
                             return (
-                                <div className="px-3">
+                                <div className="px-3" data-aos="fade-up">
                                     <h3 className="uppercase font-medium text-base text-black">{item.name}</h3>
                                     <p className="text-sm">{item.text}</p>
                                 </div>
@@ -53,7 +53,7 @@ const Academy = () => {
                     <div className="flex flex-col gap-4 border py-4">
                         {requirements.map((item) => {
                             return (
-                                <div className="px-3">
+                                <div className="px-3" data-aos="fade-up">
                                     <h3 className="uppercase font-medium text-base text-black">{item.name}</h3>
                                     <p className="text-sm">{item.text}</p>
                                 </div>

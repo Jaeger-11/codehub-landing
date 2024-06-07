@@ -2,7 +2,7 @@ import logo from "../assets/logo.jpeg"
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-10 text-bluishGray">
+    <footer className="bg-black py-10 text-bluishGray" >
         <div className="cont grid lg:grid-cols-3">
             <section className="flex flex-col gap-4">
                 <img src={logo} alt="codehub" className="h-10 w-max"/>

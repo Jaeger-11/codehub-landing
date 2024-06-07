@@ -36,8 +36,8 @@ const data = [
 const LearningTracks = () => {
   return (
     <div className=" py-6 md:py-10 border-b">
-        <main className="cont grid lg:grid-cols-3 gap-8 md:gap-4">
-            <article className="flex flex-col gap-3 lg:col-span-1 text-darkBlue sm:p-4">
+        <main data-aos="fade-up" className="cont grid lg:grid-cols-3 gap-8 md:gap-4">
+            <article data-aos="zoom-in" className="flex flex-col gap-3 lg:col-span-1 text-darkBlue sm:p-4">
                 <CustomHeader text={'Our Learning tracks'}/>
                 <h2 className="capitalize text-2xl font-bold md:text-3xl xlg:text-4xl lh font-pt">
                     our comprehensive <span className="text-customBlue">courses</span> 
@@ -51,7 +51,7 @@ const LearningTracks = () => {
             <section className="lg:col-span-2 flex md:gap-4 flex-wrap md:justify-center">
                 { data.map((item, index) => {
                     return (
-                        <article key={index} className="md:min-w-[30%] md:bg-[#F4F7FB] md:p-4 flex md:flex-col gap-4 items-center md:justify-center md:rounded-md md:shadow-sm">
+                        <article key={index} data-aos="fade-up" className="md:min-w-[30%] md:bg-[#F4F7FB] md:p-4 flex md:flex-col gap-4 items-center md:justify-center md:rounded-md md:shadow-sm">
                             <div className="p-2 bg-white rounded-full">
                                 <img className="w-10" src={item.image} alt="" />
                             </div>

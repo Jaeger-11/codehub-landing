@@ -3,7 +3,7 @@ import NewsletterImage from "../assets/newsletter.png";
 const Newsletter = () => {
   return (
     <div className="py-10 border-b">
-        <main className="cont grid lg:grid-cols-2 items-center gap-4 text-darkBlue">
+        <main className="cont grid lg:grid-cols-2 items-center gap-4 text-darkBlue" data-aos="fade-up">
             <div className="grid md:grid-cols-2 items-center">
                 <div className="mb-4 md:mb-0">
                     <img src={NewsletterImage} alt="" className=""/>

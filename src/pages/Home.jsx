@@ -6,6 +6,7 @@ import Testimonials from '../components/Testimonials'
 import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import JoinUs from '../components/JoinUs'
+import Academy from '../components/Academy'
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <Hero/>
         <AboutSection/>
         <LearningTracks/>
+        <Academy/>
         <Testimonials/>
         <Newsletter/>
         <JoinUs/>

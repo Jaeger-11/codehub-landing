@@ -18,7 +18,7 @@
 }
 
 body{
-  @apply bg-white font-inter w-svw overflow-x-hidden
+  @apply bg-white font-inter w-svw overflow-x-hidden text-darkBlue
 }
 
 .cont{
@@ -48,6 +48,9 @@ button{
 }
 .testimonial-btn button:hover svg path{
   fill: black;
+}
+a:hover{
+  @apply text-black font-medium transition-all
 }
 
 /* button {

@@ -37,9 +37,9 @@ const Academy = () => {
                 <section className="p-4 border">
                     <h2 className="p-3 mb-4 border font-semibold text-customBlue text-lg">WHAT TO EXPECT</h2>
                     <div className="flex flex-col gap-4 border py-4">
-                        {expectations.map((item) => {
+                        {expectations.map((item, index) => {
                             return (
-                                <div className="px-3" data-aos="fade-up">
+                                <div key={index} className="px-3" data-aos="fade-up">
                                     <h3 className="uppercase font-medium text-base text-black">{item.name}</h3>
                                     <p className="text-sm">{item.text}</p>
                                 </div>
@@ -51,9 +51,9 @@ const Academy = () => {
                 <section className="p-4 border">
                     <h2 className="p-3 mb-4 border font-semibold text-customBlue text-lg">REQUIREMENT</h2>
                     <div className="flex flex-col gap-4 border py-4">
-                        {requirements.map((item) => {
+                        {requirements.map((item,index) => {
                             return (
-                                <div className="px-3" data-aos="fade-up">
+                                <div key={index} className="px-3" data-aos="fade-up">
                                     <h3 className="uppercase font-medium text-base text-black">{item.name}</h3>
                                     <p className="text-sm">{item.text}</p>
                                 </div>

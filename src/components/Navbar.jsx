@@ -50,7 +50,7 @@ const Navbar = () => {
 
           <section className="flex items-center gap-12">
             <div>
-                <h2 className="text-base md:text-xl">Code<span className="font-semibold italic text-white bg-customBlue p-1">hub</span></h2>
+                <h2 className="text-base md:text-xl">code<span className="font-semibold italic text-white bg-customBlue p-1">hub</span></h2>
             </div>
             <NavContents style={'md:flex hidden items-center'}/>
           </section>

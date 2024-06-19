@@ -45,7 +45,7 @@ const LearningTracks = () => {
                 <p className="text-base ">
                     Enroll at codehub for a rewarding learning journey and enhance your skillset in the tech space.
                 </p>
-                <button className="btn">Register now</button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScnKTTPoGrtdyPpRux5LZ01alZdAvneHGR0E4MPxy4a447_ow/viewform"><button className="btn">Register now</button></a>
             </article>
 
             <section className="lg:col-span-2 flex md:gap-4 flex-wrap md:justify-center">

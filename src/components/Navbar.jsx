@@ -41,14 +41,11 @@ const Navbar = () => {
           </div>
 
           { 
-          isMenu ? <div data-aos="fade-down" className="block border-b border-t md:hidden absolute top-[100%] left-0 w-full bg-white p-4">
+          isMenu && <div data-aos="fade-down" className="block border-b border-t md:hidden absolute top-[100%] left-0 w-full bg-white p-4">
               <section className="flex flex-col gap-4 cont">
                 <NavContents style={'flex flex-col md:hidden'} setIsMenu={setIsMenu}/>
-                <Link to={'/auth'} onClick={() => setIsMenu(false)}>
-                  <button className="text-white bg-customBlue py-2 px-4 border rounded-sm font-semibold">Log In</button>
-                </Link>
               </section>
-          </div> : undefined
+          </div>
           }
 
           <section className="flex items-center gap-12">
@@ -57,10 +54,6 @@ const Navbar = () => {
             </div>
             <NavContents style={'md:flex hidden items-center'}/>
           </section>
-            
-          <Link to={'/auth'} className="hidden md:block">
-            <button className="bg-white text-customBlue py-2 px-4 border rounded-sm font-semibold">Log In</button>
-          </Link>
         </nav>
     </header>
   )

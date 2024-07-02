@@ -8,18 +8,18 @@ const NavContents = ({style, setIsMenu}) => {
       name: 'home',
       link: '/',
     },
-    {
-      name: 'courses',
-      link: '/courses',
-    },
+    // {
+    //   name: 'courses',
+    //   link: '/courses',
+    // },
     {
       name: 'about us',
       link: '/about',
     },
-    {
-      name: 'blog',
-      link: '/blog',
-    },
+    // {
+    //   name: 'blog',
+    //   link: '/blog',
+    // },
   ]
   const pathname = useLocation().pathname;
   return (

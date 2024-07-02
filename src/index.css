@@ -52,7 +52,20 @@ button{
 a:hover{
   @apply text-black font-medium transition-all
 }
-
+.about-hero{
+  @apply relative
+}
+.about-hero::before{
+  content:'';
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background: rgba(15, 21, 37, .6);
+}
+.about-video{
+  @apply absolute top-0 left-0 w-full h-full object-cover;
+  z-index: -2;
+}
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;

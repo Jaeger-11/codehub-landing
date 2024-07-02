@@ -40,7 +40,7 @@ const LearningTracks = () => {
             <article data-aos="zoom-in" className="flex flex-col gap-3 lg:col-span-1 text-darkBlue sm:p-4">
                 <CustomHeader text={'Our Learning tracks'}/>
                 <h2 className="capitalize text-2xl font-bold md:text-3xl xlg:text-4xl lh font-pt">
-                    our comprehensive <span className="text-customBlue">courses</span> 
+                    our comprehensive learning <span className="text-customBlue">Tracks</span> 
                 </h2>
                 <p className="text-base ">
                     Enroll at codehub for a rewarding learning journey and enhance your skillset in the tech space.

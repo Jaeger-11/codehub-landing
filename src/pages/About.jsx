@@ -1,26 +1,35 @@
 import aboutVideo from "../assets/aboutHeroVideo.mp4";
 import CustomHeader from "../components/CustomHeader";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+
+const data = [
+    {
+        title: "Access to Experienced Professionals",
+        text: "Gain insights and guidance from seasoned professionals who have successfully navigated the tech industry."
+    },
+    {
+        title: "Real-World Project Experience",
+        text: "Enhance your skills by working on live projects, gaining practical experience."
+    },
+    {
+        title: "Collaborative Growth",
+        text: "Develop your interpersonal and communication skills through collaboration with peers."
+    },
+    {
+        title: "Targeted Upskilling",
+        text: "Acquire the essential skills and knowledge required to excel in the tech space."
+    },
+]
+
 const About = () => {
-
-    const data = [
-        {
-            title: "Access to Experienced Professionals",
-            text: "Gain insights and guidance from seasoned professionals who have successfully navigated the tech industry."
-        },
-        {
-            title: "Real-World Project Experience",
-            text: "Enhance your skills by working on live projects, gaining practical experience."
-        },
-        {
-            title: "Collaborative Growth",
-            text: "Develop your interpersonal and communication skills through collaboration with peers."
-        },
-        {
-            title: "Targeted Upskilling",
-            text: "Acquire the essential skills and knowledge required to excel in the tech space."
-        },
-    ]
-
+    useEffect(() => {
+        AOS.init({
+          duration : 1000,
+          once: true
+        });
+      }, []);
   return (
     <div className=" border-b">
         <main className="about-hero">
@@ -31,17 +40,17 @@ const About = () => {
                 </h1>
             </div>
         </main>
-        <section className="py-6 cont border-b p-4 text-black">
-            <article >
+        <section  className="py-6 cont border-b p-4 text-black">
+            <article data-aos="fade-up">
                 <p className="md:w-3/4">Technology is the hallmark of this decade, significantly impacting every industry and driving a surge in demand for specialized skills. However, the real challenge lies not just in learning these skills through tutorials but in effectively applying them, understanding your proficiency, and gauging your employability and marketability.</p>
                 <div className="py-6">
                     <CustomHeader text={'What we hope to achieve'}/>
                     <p className="pt-4">CodeHub aims to narrow the divide between individuals' current technical skills and the expertise needed to thrive in the competitive tech industry, facilitating professional growth and advancement.</p>
-                    <ul className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-6">
+                    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-6">
                         {data.map((item) => {
                             return(
-                                <li className="">
-                                    <h6 className="text-base  font-semibold mb-2">{item.title}</h6>
+                                <li data-aos="zoom-in" className="">
+                                    <h6 className="text-base text-customBlue font-semibold mb-2">{item.title}</h6>
                                     <p className="">{item.text}</p>
                                 </li>
                             )
